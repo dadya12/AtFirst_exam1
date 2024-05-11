@@ -1,6 +1,6 @@
 from django.db import models
 
-status_field = [("active", "Активно"), ("blocked", "Заблокировано")]
+status_field = [('active', 'Активно'), ('blocked', 'Заблокировано')]
 
 
 class GuestBook(models.Model):
