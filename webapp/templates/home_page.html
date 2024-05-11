@@ -3,7 +3,9 @@
 {% block title %}Guest Book{% endblock %}
 
 {% block navbar %}
-
+    <span style="color: white; margin-top: 5px; margin-right: 16px">|</span>
+    <a class="nav-link active" aria-current="page" href="{% url 'create_book' %}">Create Book</a>
+    <span style="color: white; margin-top: 5px; margin-left: 16px">|</span>
 {% endblock %}
 
 {% block content_2 %}
