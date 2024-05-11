@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Guest Book{% endblock %}
+
+{% block navbar %}
+
+{% endblock %}
+
+{% block content_2 %}
+    <h1 style="margin-top: 30px">Гостевая Книга</h1>
+    {% for b in book %}
+        <div class="row" style="margin-top: 40px; max-width: 1010px">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card" style="border: solid 2px; padding-bottom: 40px; border-radius: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ b.author_name }} ({{ b.author_gmail }})
+                            <span>
+                            <a href="" style="font-size: 27px; color: black"><i class="bi bi-file-font"></i></a>
+                            <a href="" style="font-size: 27px; color: black"><i class="bi bi-file-excel"></i></a>
+                            </span>
+                        </h5>
+                        <p class="card-text">{{ b.text }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
