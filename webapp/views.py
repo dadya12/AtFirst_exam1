@@ -34,7 +34,7 @@ def change_book(request, pk):
             'author_gmail': book.author_gmail,
             'text': book.text,
         })
-        return render(request, 'create_book.html', {'form': form})
+        return render(request, 'update_book.html', {'form': form})
     elif request.method == 'POST':
         form = BookForm(data=request.POST)
         if form.is_valid():
@@ -45,6 +45,13 @@ def change_book(request, pk):
             return redirect('home_page')
         else:
             book.save()
-            return render(request, 'create_book.html', {'form': form})
+            return render(request, 'update_book.html', {'form': form})
 
 
+def delete_book(request, pk):
+    book = get_object_or_404(GuestBook, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete_book.html', {'book': book})
+    elif request.method == 'POST':
+        book.delete()
+        return redirect('home_page')

@@ -18,7 +18,7 @@
                         <h5 class="card-title">{{ b.author_name }} ({{ b.author_gmail }})
                             <span>
                             <a href="{% url 'change_book' b.pk %}" style="font-size: 27px; color: black"><i class="bi bi-file-font"></i></a>
-                            <a href="" style="font-size: 27px; color: black"><i class="bi bi-file-excel"></i></a>
+                            <a href="{% url 'delete_book' b.pk %}" style="font-size: 27px; color: black"><i class="bi bi-file-excel"></i></a>
                             </span>
                         </h5>
                         <p class="card-text">{{ b.text }}</p>

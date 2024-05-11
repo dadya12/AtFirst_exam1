@@ -1,18 +1,19 @@
 {% extends 'base.html' %}
 
 {% block navbar %}
-    <span style="color: white; margin-top: 5px; margin-right: 16px">|</span>
     <a class="nav-link active" aria-current="page" href="{% url 'home_page' %}">Home Page</a>
     <span style="color: white; margin-top: 5px; margin-left: 16px">|</span>
     <a class="nav-link active" aria-current="page" href="{% url 'create_book' %}">Create Book</a>
     <span style="color: white; margin-top: 5px; margin-left: 16px">|</span>
 {% endblock %}
 
-    <title>{% block title %}Update GuestBook{% endblock %}</title>
+    <title>{% block title %}Delete GuestBook{% endblock %}</title>
 
 {% block content_2 %}
-<h1 style="margin-top: 50px">Update Book</h1>
+<h1 style="margin-top: 50px">Вы точно хотите удалить эту задачу!? </h1>
 <form method="post">
-    {% include 'partial/book_form.html' with value_submit='Сохранить' %}
+    {% csrf_token %}
+<button type="submit" class="btn btn-success">ДА</button>
+<a class="btn btn-danger" href="{% url 'home_page' %}" role="button">НЕТ</a>
 </form>
 {% endblock %}
