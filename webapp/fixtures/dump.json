@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.guestbook",
+  "pk": 1,
+  "fields": {
+    "author_name": "Adam",
+    "author_gmail": "adam.nemmish213@gmail.com",
+    "text": "Pls not write me",
+    "created_at": "2024-05-11T16:16:19.655Z",
+    "updated_at": "2024-05-11T16:17:35.834Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 2,
+  "fields": {
+    "author_name": "Mama",
+    "author_gmail": "mam213@gmail.com",
+    "text": "Mama is my mom oke?",
+    "created_at": "2024-05-11T16:18:19.555Z",
+    "updated_at": "2024-05-11T16:18:19.555Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 3,
+  "fields": {
+    "author_name": "Sasha",
+    "author_gmail": "Sasha@gmail.com",
+    "text": "Sasha its my Sasha oke?",
+    "created_at": "2024-05-11T16:18:47.246Z",
+    "updated_at": "2024-05-11T16:18:47.246Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 4,
+  "fields": {
+    "author_name": "Adam2",
+    "author_gmail": "Adam@gmail.com",
+    "text": "Adam2 its same Adam",
+    "created_at": "2024-05-11T16:19:16.345Z",
+    "updated_at": "2024-05-11T16:19:16.345Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 5,
+  "fields": {
+    "author_name": "Adam3",
+    "author_gmail": "Adam3@gmail.com",
+    "text": "Adam3 its same Adam2 oke?",
+    "created_at": "2024-05-11T16:19:39.669Z",
+    "updated_at": "2024-05-11T16:19:39.669Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$BadWo4oaarrgzhkW7gO9pA$GcN+8Br5v3PXfvT6qOuUPaaB2Im0YjXvlxqWlNoPfCA=",
+    "last_login": "2024-05-11T16:15:22.274Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-11T16:11:18.598Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
